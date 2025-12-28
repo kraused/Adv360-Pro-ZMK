@@ -49,6 +49,62 @@
 
             label = "MACRO_OPT_CMD_V";
         };
+
+        ctrl_a: ctrl_a {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_tap>,
+                <&kp A>,
+                <&macro_release>,
+                <&kp LCTRL>;
+
+            label = "CTRL_A";
+        };
+
+        ctrl_e: ctrl_e {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_tap>,
+                <&kp E>,
+                <&macro_release>,
+                <&kp LCTRL>;
+
+            label = "CTRL_E";
+        };
+
+        alt_left: alt_left {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp LEFT>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "ALT_LEFT";
+        };
+
+        alt_right: alt_right {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp RIGHT>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "ALT_RIGHT";
+        };
     };
 
     keymap {
@@ -72,7 +128,7 @@
 &none      &kp GRAVE  &none      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp MINUS       &none                                             &none             &none            &kp N7        &kp N8        &kp N9        &none         &none
 &none      &none      &kp EQUAL  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_SHIFT  &none             &none  &none      &none  &none  &none             &kp RIGHT_SHIFT  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &none         &none
 &kp LSHFT  &none      &none      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &none                                    &none      &none                           &kp NUMBER_0     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none         &kp RSHFT
-&none      &none      &none      &none                 &none                                  &macro_opt_cmd_c  &none  &none      &none  &none  &macro_opt_cmd_v                   &none         &none         &none         &none         &mo 2
+&none      &none      &none      &alt_left             &alt_right                             &macro_opt_cmd_c  &none  &none      &none  &none  &macro_opt_cmd_v                   &ctrl_a       &ctrl_e       &none         &none         &mo 2
             >;
         };
 
