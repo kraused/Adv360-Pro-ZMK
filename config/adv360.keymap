@@ -55,6 +55,15 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        alt_mod_shift_semicolon: alt_mod_shift_semicolon {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ALT_MOD_SHIFT_SEMICOLON";
+            bindings = <&alt_semicolon>, <&alt_shift_semicolon>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     macros {
