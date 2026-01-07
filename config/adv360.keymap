@@ -49,7 +49,7 @@
 
         alt_mod_shift_d: alt_mod_shift_d {
             compatible = "zmk,behavior-mod-morph";
-            label = "ALT_MOD_SHIFT_S";
+            label = "ALT_MOD_SHIFT_D";
             bindings = <&alt_d>, <&alt_shift_d>;
 
             #binding-cells = <0>;
