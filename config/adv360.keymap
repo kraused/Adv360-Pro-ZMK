@@ -55,6 +55,15 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        alt_mod_shift_semicolon: alt_mod_shift_semicolon {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ALT_MOD_SHIFT_SEMICOLON";
+            bindings = <&alt_semicolon>, <&alt_shift_semicolon>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     macros {
@@ -296,6 +305,62 @@
             label = "ALT_ENTER";
         };
 
+        alt_tab: alt_tab {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp TAB>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "ALT_TAB";
+        };
+
+        alt_fslh: alt_fslh {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp FSLH>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "ALT_FSLH";
+        };
+
+        alt_comma: alt_comma {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp COMMA>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "ALT_COMMA";
+        };
+
+        alt_semicolon: alt_semicolon {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp SEMICOLON>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "ALT_SEMICOLON";
+        };
+
         alt_w: alt_w {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -422,6 +487,24 @@
                 <&kp LALT>;
 
             label = "ALT_SHIFT_D";
+        };
+
+        alt_shift_semicolon: alt_shift_semicolon {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_press>,
+                <&kp LSHIFT>,
+                <&macro_tap>,
+                <&kp SEMICOLON>,
+                <&macro_release>,
+                <&kp LSHIFT>;
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "ALT_SHIFT_SEMICOLON";
         };
     };
 
