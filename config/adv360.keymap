@@ -428,7 +428,7 @@
                 <&macro_tap>,
                 <&kp W>,
                 <&macro_release>,
-                <&kp LSHIFT>;
+                <&kp LSHIFT>,
                 <&macro_release>,
                 <&kp LALT>;
 
@@ -446,7 +446,7 @@
                 <&macro_tap>,
                 <&kp A>,
                 <&macro_release>,
-                <&kp LSHIFT>;
+                <&kp LSHIFT>,
                 <&macro_release>,
                 <&kp LALT>;
 
@@ -464,7 +464,7 @@
                 <&macro_tap>,
                 <&kp S>,
                 <&macro_release>,
-                <&kp LSHIFT>;
+                <&kp LSHIFT>,
                 <&macro_release>,
                 <&kp LALT>;
 
@@ -482,7 +482,7 @@
                 <&macro_tap>,
                 <&kp D>,
                 <&macro_release>,
-                <&kp LSHIFT>;
+                <&kp LSHIFT>,
                 <&macro_release>,
                 <&kp LALT>;
 
@@ -500,7 +500,7 @@
                 <&macro_tap>,
                 <&kp SEMICOLON>,
                 <&macro_release>,
-                <&kp LSHIFT>;
+                <&kp LSHIFT>,
                 <&macro_release>,
                 <&kp LALT>;
 
