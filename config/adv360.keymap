@@ -19,6 +19,15 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
+
+        alt_mod_shift_e: alt_mod_shift_e {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ALT_MOD_SHIFT_E";
+            bindings = <&macro_opt_cmd_c>, <&macro_opt_cmd_v>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     macros {
