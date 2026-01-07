@@ -105,6 +105,234 @@
 
             label = "ALT_RIGHT";
         };
+
+        alt_0: alt_0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp NUMBER_0>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "ALT_0";
+        };
+
+        alt_1: alt_1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp NUMBER_1>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "ALT_1";
+        };
+
+        alt_2: alt_2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp NUMBER_2>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "ALT_2";
+        };
+
+        alt_3: alt_3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp NUMBER_3>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "ALT_3";
+        };
+
+        alt_4: alt_4 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp NUMBER_4>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "ALT_4";
+        };
+
+        alt_5: alt_5 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp NUMBER_5>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "ALT_5";
+        };
+
+        alt_6: alt_6 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp NUMBER_6>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "ALT_6";
+        };
+
+        alt_7: alt_7 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp NUMBER_7>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "ALT_7";
+        };
+
+        alt_8: alt_8 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp NUMBER_8>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "ALT_8";
+        };
+
+        alt_9: alt_9 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp NUMBER_9>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "ALT_9";
+        };
+
+        alt_enter: alt_enter {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp ENTER>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "ALT_ENTER";
+        };
+
+        alt_w: alt_w {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp W>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "ALT_W";
+        };
+
+        alt_a: alt_a {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp A>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "ALT_A";
+        };
+
+        alt_s: alt_s {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp S>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "ALT_S";
+        };
+
+        alt_d: alt_d {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp D>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "ALT_D";
+        };
+
+        alt_shift_a: alt_shift_a {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_press>,
+                <&kp LSHIFT>,
+                <&macro_tap>,
+                <&kp A>,
+                <&macro_release>,
+                <&kp LSHIFT>;
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "ALT_SHIFT_A";
+        };
     };
 
     keymap {
