@@ -20,10 +20,37 @@
             bindings = <&kp>, <&kp>;
         };
 
-        alt_mod_shift_e: alt_mod_shift_e {
+        alt_mod_shift_w: alt_mod_shift_w {
             compatible = "zmk,behavior-mod-morph";
-            label = "ALT_MOD_SHIFT_E";
-            bindings = <&macro_opt_cmd_c>, <&macro_opt_cmd_v>;
+            label = "ALT_MOD_SHIFT_W";
+            bindings = <&alt_w>, <&alt_shift_w>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        alt_mod_shift_a: alt_mod_shift_a {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ALT_MOD_SHIFT_A";
+            bindings = <&alt_a>, <&alt_shift_a>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        alt_mod_shift_s: alt_mod_shift_s {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ALT_MOD_SHIFT_S";
+            bindings = <&alt_s>, <&alt_shift_s>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        alt_mod_shift_d: alt_mod_shift_d {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ALT_MOD_SHIFT_S";
+            bindings = <&alt_d>, <&alt_shift_d>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -325,6 +352,24 @@
             label = "ALT_D";
         };
 
+        alt_shift_w: alt_shift_w {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_press>,
+                <&kp LSHIFT>,
+                <&macro_tap>,
+                <&kp W>,
+                <&macro_release>,
+                <&kp LSHIFT>;
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "ALT_SHIFT_W";
+        };
+
         alt_shift_a: alt_shift_a {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -341,6 +386,24 @@
                 <&kp LALT>;
 
             label = "ALT_SHIFT_A";
+        };
+
+        alt_shift_s: alt_shift_s {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_press>,
+                <&kp LSHIFT>,
+                <&macro_tap>,
+                <&kp S>,
+                <&macro_release>,
+                <&kp LSHIFT>;
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "ALT_SHIFT_S";
         };
     };
 
