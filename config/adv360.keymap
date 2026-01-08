@@ -416,96 +416,6 @@
 
             label = "ALT_D";
         };
-
-        alt_shift_w: alt_shift_w {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_press>,
-                <&kp LSHIFT>,
-                <&macro_tap>,
-                <&kp W>,
-                <&macro_release>,
-                <&kp LSHIFT>,
-                <&macro_release>,
-                <&kp LALT>;
-
-            label = "ALT_SHIFT_W";
-        };
-
-        alt_shift_a: alt_shift_a {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_press>,
-                <&kp LSHIFT>,
-                <&macro_tap>,
-                <&kp A>,
-                <&macro_release>,
-                <&kp LSHIFT>,
-                <&macro_release>,
-                <&kp LALT>;
-
-            label = "ALT_SHIFT_A";
-        };
-
-        alt_shift_s: alt_shift_s {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_press>,
-                <&kp LSHIFT>,
-                <&macro_tap>,
-                <&kp S>,
-                <&macro_release>,
-                <&kp LSHIFT>,
-                <&macro_release>,
-                <&kp LALT>;
-
-            label = "ALT_SHIFT_S";
-        };
-
-        alt_shift_d: alt_shift_d {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_press>,
-                <&kp LSHIFT>,
-                <&macro_tap>,
-                <&kp D>,
-                <&macro_release>,
-                <&kp LSHIFT>,
-                <&macro_release>,
-                <&kp LALT>;
-
-            label = "ALT_SHIFT_D";
-        };
-
-        alt_shift_semicolon: alt_shift_semicolon {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_press>,
-                <&kp LSHIFT>,
-                <&macro_tap>,
-                <&kp SEMICOLON>,
-                <&macro_release>,
-                <&kp LSHIFT>,
-                <&macro_release>,
-                <&kp LALT>;
-
-            label = "ALT_SHIFT_SEMICOLON";
-        };
     };
 
     keymap {
@@ -536,11 +446,11 @@
         fn {
             display-name = "Fn";
             bindings = <
-&kp F1      &kp F2            &kp F3            &kp F4            &kp F5  &kp F6      &tog 1                                  &mo 3  &kp F7      &kp F8  &kp F9  &kp F10  &kp F11                   &kp F12
-&none       &none             &alt_mod_shift_w  &none             &none   &none       &none                                   &none  &none       &alt_7  &alt_8  &alt_9   &none                     &none
-&none       &alt_mod_shift_a  &alt_mod_shift_s  &alt_mod_shift_d  &none   &kp LSHIFT  &none   &none  &none      &none  &none  &none  &kp RSHIFT  &alt_4  &alt_5  &alt_6   &alt_mod_shift_semicolon  &none
-&kp LSHIFT  &none             &none             &none             &none   &none                      &none      &none                &alt_0      &alt_1  &alt_2  &alt_3   &alt_fslh                 &kp RSHIFT
-&none       &none             &none             &none             &none               &none   &none  &none      &none  &none  &none              &none   &none   &none    &none                     &none
+&kp F1      &kp F2  &kp F3  &kp F4  &kp F5  &kp F6      &tog 1                                       &mo 3  &kp F7      &kp F8  &kp F9  &kp F10  &kp F11         &kp F12
+&none       &none   &alt_w  &none   &none   &none       &none                                        &none  &none       &alt_7  &alt_8  &alt_9   &none           &none
+&none       &alt_a  &alt_s  &alt_d  &none   &kp LSHIFT  &none   &none  &none      &none  &none       &none  &kp RSHIFT  &alt_4  &alt_5  &alt_6   &alt_semicolon  &none
+&kp LSHIFT  &none   &none   &none   &none   &none                      &none      &none                     &alt_0      &alt_1  &alt_2  &alt_3   &alt_fslh       &kp RSHIFT
+&none       &none   &none   &none   &none               &none   &none  &none      &none  &alt_enter  &none              &none   &none   &none    &none           &none
             >;
         };
 
