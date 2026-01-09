@@ -467,6 +467,45 @@
                 <&kp LSHIFT>,
                 <&macro_release>,
                 <&kp LALT>;
+
+            label = "ALT_SHIFT_S";
+        };
+
+        alt_shift_d: alt_shift_d {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_press>,
+                <&kp LSHIFT>,
+                <&macro_tap>,
+                <&kp D>,
+                <&macro_release>,
+                <&kp LSHIFT>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "ALT_SHIFT_D";
+        };
+
+        alt_shift_semicolon: alt_shift_semicolon {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_press>,
+                <&kp LSHIFT>,
+                <&macro_tap>,
+                <&kp SEMICOLON>,
+                <&macro_release>,
+                <&kp LSHIFT>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "ALT_SHIFT_SEMICOLON";
+        };
     };
 
     keymap {
