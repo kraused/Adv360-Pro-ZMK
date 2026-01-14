@@ -23,7 +23,7 @@
         alt_mod_shift_w: alt_mod_shift_w {
             compatible = "zmk,behavior-mod-morph";
             label = "ALT_MOD_SHIFT_W";
-            bindings = <&alt_w>, <&alt_shift_w>;
+            bindings = <&alt_e>, <&alt_shift_w>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -32,7 +32,7 @@
         alt_mod_shift_a: alt_mod_shift_a {
             compatible = "zmk,behavior-mod-morph";
             label = "ALT_MOD_SHIFT_A";
-            bindings = <&alt_a>, <&alt_shift_a>;
+            bindings = <&alt_f>, <&alt_shift_a>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -361,7 +361,7 @@
             label = "ALT_SEMICOLON";
         };
 
-        alt_w: alt_w {
+        alt_e: alt_e {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -373,20 +373,6 @@
                 <&kp LALT>;
 
             label = "ALT_W";
-        };
-
-        alt_a: alt_a {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp A>,
-                <&macro_release>,
-                <&kp LALT>;
-
-            label = "ALT_A";
         };
 
         alt_s: alt_s {
@@ -415,6 +401,48 @@
                 <&kp LALT>;
 
             label = "ALT_D";
+        };
+
+        alt_f: alt_f {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp A>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "ALT_A";
+        };
+
+        alt_c: alt_c {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp C>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "ALT_C";
+        };
+
+        alt_v: alt_v {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp V>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "ALT_V";
         };
 
         alt_shift_w: alt_shift_w {
@@ -537,8 +565,8 @@
             display-name = "Fn";
             bindings = <
 &kp F1      &kp F2  &kp F3  &kp F4  &kp F5  &kp F6      &tog 1                                       &mo 3  &kp F7      &kp F8  &kp F9  &kp F10  &kp F11         &kp F12
-&none       &none   &alt_w  &none   &none   &none       &none                                        &none  &none       &alt_7  &alt_8  &alt_9   &none           &none
-&none       &alt_a  &alt_s  &alt_d  &none   &kp LSHIFT  &none   &none  &none      &none  &none       &none  &kp RSHIFT  &alt_4  &alt_5  &alt_6   &alt_semicolon  &none
+&none       &none   &alt_e  &none   &none   &none       &none                                        &none  &none       &alt_7  &alt_8  &alt_9   &none           &none
+&none       &alt_f  &alt_s  &alt_d  &none   &kp LSHIFT  &none   &none  &none      &none  &none       &none  &kp RSHIFT  &alt_4  &alt_5  &alt_6   &alt_semicolon  &none
 &kp LSHIFT  &none   &none   &none   &none   &none                      &none      &none                     &alt_0      &alt_1  &alt_2  &alt_3   &alt_fslh       &kp RSHIFT
 &none       &none   &none   &none   &none               &none   &none  &none      &none  &alt_enter  &none              &none   &none   &none    &none           &none
             >;
