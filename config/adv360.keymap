@@ -368,11 +368,11 @@
                 <&macro_press>,
                 <&kp LALT>,
                 <&macro_tap>,
-                <&kp W>,
+                <&kp E>,
                 <&macro_release>,
                 <&kp LALT>;
 
-            label = "ALT_W";
+            label = "ALT_E";
         };
 
         alt_s: alt_s {
@@ -410,11 +410,11 @@
                 <&macro_press>,
                 <&kp LALT>,
                 <&macro_tap>,
-                <&kp A>,
+                <&kp F>,
                 <&macro_release>,
                 <&kp LALT>;
 
-            label = "ALT_A";
+            label = "ALT_F";
         };
 
         alt_c: alt_c {
